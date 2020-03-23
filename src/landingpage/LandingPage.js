@@ -16,6 +16,7 @@ export default function LandingPage() {
                     <Nav.Link href="/Employers">Employers</Nav.Link>
                     <Nav.Link href="/Jobseekers">Jobseekers</Nav.Link>
                     <Nav.Link href="/AboutUs">About Us</Nav.Link>
+                    <Nav.Link href="/FAQs">FAQs</Nav.Link>
                 </Nav>
             </Navbar>
             <h1>Say goodbye to smoke and mirrors.</h1>

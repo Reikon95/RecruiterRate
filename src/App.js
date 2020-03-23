@@ -5,6 +5,9 @@ import './App.css';
 import LandingPage from './landingpage/LandingPage.js'
 import Login from './login/Login.js';
 import SignUp from './signup/Signup.js';
+import Recruiters from './recruiters/Recruiters.js';
+import Employers from './employers/Employers.js';
+import Jobseekers from './jobseekers/Jobseekers.js';
 function App() {
   return (
     <div className="App">
@@ -18,6 +21,15 @@ function App() {
           </Route>
           <Route exact path='/signup'>
             <SignUp/>
+          </Route>
+          <Route exact path='/recruiters'>
+            <Recruiters/>
+          </Route>
+          <Route exact path='/Employers'>
+            <Employers/>
+          </Route>
+          <Route exact path='/Jobseekers'>
+            <Jobseekers/>
           </Route>
         </Switch>
       </Router>

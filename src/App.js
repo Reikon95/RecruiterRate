@@ -25,10 +25,10 @@ function App() {
           <Route exact path='/recruiters'>
             <Recruiters/>
           </Route>
-          <Route exact path='/Employers'>
+          <Route exact path='/employers'>
             <Employers/>
           </Route>
-          <Route exact path='/Jobseekers'>
+          <Route exact path='/jobseekers'>
             <Jobseekers/>
           </Route>
         </Switch>

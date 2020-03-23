@@ -10,11 +10,12 @@ export default function LandingPage() {
     return (
         <div className="landingPageBody">
             <Navbar bg="light" expand="lg" fixed="top" >
-                <Navbar.Brand href="#">Navbar</Navbar.Brand>
+                <Navbar.Brand href="#">RECRUITER_RATE</Navbar.Brand>
                 <Nav className="mr-auto">
-                    <Nav.Link href="#home">Home</Nav.Link>
-                    <Nav.Link href="#features">Features</Nav.Link>
-                    <Nav.Link href="#pricing">Pricing</Nav.Link>
+                    <Nav.Link href="/Recruiters">Recruiters</Nav.Link>
+                    <Nav.Link href="/Employers">Employers</Nav.Link>
+                    <Nav.Link href="/Jobseekers">Jobseekers</Nav.Link>
+                    <Nav.Link href="/AboutUs">About Us</Nav.Link>
                 </Nav>
             </Navbar>
             <h1>Say goodbye to smoke and mirrors.</h1>

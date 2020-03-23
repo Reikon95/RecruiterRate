@@ -2,7 +2,7 @@ import React from 'react';
 import './LandingPage.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
-
+import {Link} from 'react-router-dom';
 export default function LandingPage() {
     
     return (
@@ -12,9 +12,9 @@ export default function LandingPage() {
         <h3>RecruiterRate is a simple platform to discover and review recruiters. For too long, the industry has suffered from 
         cowboys, chancers and chaos. We're here to bring some unbiased clarity to a market.</h3>
         <h3>Ready to get started?</h3>
-        <Button variant="danger">Sign Up</Button>
+        <Link to="/signup"><Button variant="danger">Sign Up</Button></Link>
         <br/>
-        <a href="/login">Already have an account? Log in</a>
+        <Link to="/login">Already have an account? Log in</Link>
         </div>
     )
 }

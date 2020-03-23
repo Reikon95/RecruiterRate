@@ -3,7 +3,8 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import {Switch, Route} from 'react-router-dom';
 import './App.css';
 import LandingPage from './landingpage/LandingPage.js'
-
+import Login from './login/Login.js';
+import SignUp from './signup/Signup.js';
 function App() {
   return (
     <div className="App">
@@ -12,8 +13,11 @@ function App() {
           <Route exact path='/'>
             <LandingPage/>
           </Route>
-          <Route exact path='/'>
-            <LandingPage/>
+          <Route exact path='/login'>
+            <Login/>
+          </Route>
+          <Route exact path='/signup'>
+            <SignUp/>
           </Route>
         </Switch>
       </Router>

@@ -22,3 +22,11 @@ test('link to log in is present', () => {
   expect(link).toBeTruthy();
   expect(link).toHaveLength(1);
 })
+
+test('expect the header to be present, and recruiterrate to be mentioned in the copy', () => {
+  const { getAllByText } = render(<LandingPage />);
+  const recruiterrate = getAllByText(/RecruiterRate/i);
+  expect(recruiterrate).toBeTruthy();
+  expect(recruiterrate).toHaveLength(2);
+
+})

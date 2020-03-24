@@ -8,6 +8,8 @@ import SignUp from './signup/Signup.js';
 import Recruiters from './recruiters/Recruiters.js';
 import Employers from './employers/Employers.js';
 import Jobseekers from './jobseekers/Jobseekers.js';
+import AboutUs from './about/AboutUs.js';
+import FAQs from './FAQ/FAQs.js';
 function App() {
   return (
     <div className="App">
@@ -30,6 +32,12 @@ function App() {
           </Route>
           <Route exact path='/jobseekers'>
             <Jobseekers/>
+          </Route>
+          <Route exact path='/aboutus'>
+            <AboutUs/>
+          </Route>
+          <Route exact path='/FAQs'>
+            <FAQs/>
           </Route>
         </Switch>
       </Router>

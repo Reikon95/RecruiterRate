@@ -10,7 +10,7 @@ export default function LandingPage() {
     return (
         <>
             <Navbar bg="light" expand="lg" fixed="top" >
-                <Navbar.Brand href="#">RECRUITER_RATE</Navbar.Brand>
+                <Navbar.Brand href="#">RecruiterRate</Navbar.Brand>
                 <Nav className="mr-auto">
                     <Nav.Link href="/Recruiters">Recruiters</Nav.Link>
                     <Nav.Link href="/Employers">Employers</Nav.Link>

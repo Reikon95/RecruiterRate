@@ -1,10 +1,6 @@
 import React from 'react';
-import Accordion from 'react-bootstrap/Accordion';
-import Card from 'react-bootstrap/Card';
 import Tabs from 'react-bootstrap/Tabs';
 import Tab from 'react-bootstrap/Tab';
-import Sonnet from 'react-bootstrap/Sonnet';
-import Button from 'react-bootstrap/Button';
 import FAQCandidates from './FAQCandidates';
 import FAQEmployers from './FAQEmployers';
 import FAQRecruiters from './FAQRecruiters';
@@ -13,14 +9,14 @@ export default function FAQs() {
         <>
         <h1>FAQs</h1>
         <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example">
-  <Tab eventKey="home" title="Home">
-    <Sonnet />
+  <Tab eventKey="candidates" title="Candidates">
+<FAQCandidates/>
   </Tab>
-  <Tab eventKey="profile" title="Profile">
-    <Sonnet />
+  <Tab eventKey="employers" title="Employers">
+<FAQEmployers/>
   </Tab>
-  <Tab eventKey="contact" title="Contact" disabled>
-    <Sonnet />
+  <Tab eventKey="recruiters" title="Recruiters" >
+<FAQRecruiters/>
   </Tab>
 </Tabs>
         </>

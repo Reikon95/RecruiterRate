@@ -10,7 +10,6 @@ export default function Recruiters() {
         from happy clients and candidates. Watch yourself rise up the ranks and become the best recruiter in your industry!
         </p>
         <Link to="/signup"><Button variant="danger">Sign Up</Button></Link>
-
         </>
     )
 }

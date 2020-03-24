@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import './Signup.css';
+import SignUpCandidate from './SignUpCandidate';
+import SignUpEmployer from './SignUpEmployer';
+import SignUpRecruiter from './SignUpRecruiter';
 export default function SignUp() {
     let [userType, setUserType] = useState(false);
     return (
@@ -14,7 +17,7 @@ export default function SignUp() {
             <div className="signupGap">
             {userType === "Recruiter" ?
                 <>
-                    Recruiter
+                    <SignUpRecruiter/>
                 </>
                 : userType === "Jobseeker" ?
                     <>

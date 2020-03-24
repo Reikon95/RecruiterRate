@@ -21,11 +21,11 @@ export default function SignUp() {
                 </>
                 : userType === "Jobseeker" ?
                     <>
-                        Jobseeker
+                        <SignUpCandidate/>
                     </>
                     : userType === "Employer" ?
                         <>
-                            Employer
+                            <SignUpEmployer/>
                         </>
                         :
                         <>

@@ -8,7 +8,7 @@ export default function FAQs() {
     return (
         <>
         <h1>FAQs</h1>
-        <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example">
+        <Tabs defaultActiveKey="candidates" id="uncontrolled-tab-example">
   <Tab eventKey="candidates" title="Candidates">
 <FAQCandidates/>
   </Tab>

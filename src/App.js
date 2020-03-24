@@ -11,6 +11,7 @@ import Jobseekers from './jobseekers/Jobseekers.js';
 import AboutUs from './about/AboutUs.js';
 import FAQs from './FAQ/FAQs.js';
 import AgencyPricing from './pricing/AgencyPricing.js';
+import Rankings from './rankings/Rankings.js';
 function App() {
   return (
     <div className="App">
@@ -42,6 +43,9 @@ function App() {
           </Route>
           <Route exact path='/agencyPricing'>
             <AgencyPricing/>
+          </Route>
+          <Route exact path='/rankings'>
+            <Rankings/>
           </Route>
         </Switch>
       </Router>

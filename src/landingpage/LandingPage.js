@@ -15,7 +15,7 @@ export default function LandingPage() {
                 <h3>Ready to get started?</h3>
                 <a href="/signup"><Button variant="danger">Sign Up</Button></a>
                 <br />
-                <a href="/login" className="linkElement">Already have an account? Log in</a>
+                <a href="/login" className="linkElement" data-testid="loginLink">Already have an account? Log in</a>
             </div>
         </>
     )

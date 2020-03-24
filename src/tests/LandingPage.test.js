@@ -14,3 +14,11 @@ test('button is present', () => {
   expect(button).toBeTruthy();
   expect(button).toHaveLength(1);
 })
+
+
+test('link to log in is present', () => {
+  const {getAllByTestId} = render(<LandingPage/>);
+  const link = getAllByTestId('loginLink');
+  expect(link).toBeTruthy();
+  expect(link).toHaveLength(1);
+})

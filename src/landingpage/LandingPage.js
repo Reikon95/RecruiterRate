@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 export default function LandingPage() {
 
     return (
-        <div className="landingPageBody">
+        <>
             <Navbar bg="light" expand="lg" fixed="top" >
                 <Navbar.Brand href="#">RECRUITER_RATE</Navbar.Brand>
                 <Nav className="mr-auto">
@@ -19,6 +19,8 @@ export default function LandingPage() {
                     <Nav.Link href="/FAQs">FAQs</Nav.Link>
                 </Nav>
             </Navbar>
+                    <div className="landingPageBody">
+
             <h1>Say goodbye to smoke and mirrors.</h1>
             <h1>Say hello to simple hiring!</h1>
             <h3>RecruiterRate is a simple platform to discover and review recruiters. For too long, the industry has suffered from
@@ -28,5 +30,6 @@ export default function LandingPage() {
             <br />
             <Link to="/login">Already have an account? Log in</Link>
         </div>
+        </>
     )
 }

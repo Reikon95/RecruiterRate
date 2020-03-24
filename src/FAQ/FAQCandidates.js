@@ -6,25 +6,25 @@ export default function FAQJobseekers() {
     return (
         <>
             <h2>Jobseekers</h2>
-            <Accordion defaultActiveKey="0">
+            <Accordion>
                 <Card>
                     <Card.Header>
                         <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                            Question
+                            How much does it cost me?
       </Accordion.Toggle>
                     </Card.Header>
                     <Accordion.Collapse eventKey="0">
-                        <Card.Body>Hello! I'm the body</Card.Body>
+                        <Card.Body>Nothing! We want you to find a great job with a trusted partner, pronto</Card.Body>
                     </Accordion.Collapse>
                 </Card>
                 <Card>
                     <Card.Header>
                         <Accordion.Toggle as={Button} variant="link" eventKey="1">
-                            Question
+                            Why use RecruiterRate?
       </Accordion.Toggle>
                     </Card.Header>
                     <Accordion.Collapse eventKey="1">
-                        <Card.Body>Hello! I'm another body</Card.Body>
+                        <Card.Body>There are over 100,000 recruiters in the UK - it's important to be able to pick out the right one</Card.Body>
                     </Accordion.Collapse>
                 </Card>
             </Accordion>

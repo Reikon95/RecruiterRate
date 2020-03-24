@@ -10,7 +10,6 @@ export default function LandingPage() {
         <>
             <NavBarComp/>
                     <div className="landingPageBody">
-
             <h1>Say goodbye to smoke and mirrors.</h1>
             <h1>Say hello to simple hiring!</h1>
             <h3>RecruiterRate is a simple platform to discover and review recruiters. For too long, the industry has suffered from

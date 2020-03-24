@@ -6,15 +6,17 @@ export default function FAQEmployers() {
     return (
         <>
             <h2>Employers</h2>
-            <Accordion defaultActiveKey="0">
+            <Accordion>
                 <Card>
                     <Card.Header>
                         <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                            Click me!
+                        How much does it cost me?
       </Accordion.Toggle>
                     </Card.Header>
                     <Accordion.Collapse eventKey="0">
-                        <Card.Body>Hello! I'm the body</Card.Body>
+                        <Card.Body>Subscribing as an employer costs £49 a month, with no contract tie in. The average recruitment
+                            fee for an engineer earning £50k is £7,500, so think of it as a small insurance you're going with a quality partner!
+                        </Card.Body>
                     </Accordion.Collapse>
                 </Card>
                 <Card>

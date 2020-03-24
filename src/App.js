@@ -10,6 +10,7 @@ import Employers from './employers/Employers.js';
 import Jobseekers from './jobseekers/Jobseekers.js';
 import AboutUs from './about/AboutUs.js';
 import FAQs from './FAQ/FAQs.js';
+import AgencyPricing from './pricing/AgencyPricing.js';
 function App() {
   return (
     <div className="App">
@@ -38,6 +39,9 @@ function App() {
           </Route>
           <Route exact path='/FAQs'>
             <FAQs/>
+          </Route>
+          <Route exact path='/agencyPricing'>
+            <AgencyPricing/>
           </Route>
         </Switch>
       </Router>

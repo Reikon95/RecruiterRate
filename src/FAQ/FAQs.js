@@ -7,18 +7,18 @@ import FAQRecruiters from './FAQRecruiters';
 export default function FAQs() {
     return (
         <>
-        <h1>FAQs</h1>
-        <Tabs defaultActiveKey="candidates" id="uncontrolled-tab-example">
-  <Tab eventKey="candidates" title="Candidates">
-<FAQCandidates/>
-  </Tab>
-  <Tab eventKey="employers" title="Employers">
-<FAQEmployers/>
-  </Tab>
-  <Tab eventKey="recruiters" title="Recruiters" >
-<FAQRecruiters/>
-  </Tab>
-</Tabs>
+            <h1>FAQs</h1>
+            <Tabs defaultActiveKey="candidates" id="uncontrolled-tab-example">
+                <Tab eventKey="candidates" title="Candidates">
+                    <FAQCandidates />
+                </Tab>
+                <Tab eventKey="employers" title="Employers">
+                    <FAQEmployers />
+                </Tab>
+                <Tab eventKey="recruiters" title="Recruiters" >
+                    <FAQRecruiters />
+                </Tab>
+            </Tabs>
         </>
     )
 }

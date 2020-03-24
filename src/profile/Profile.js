@@ -7,8 +7,9 @@ import StarRating from 'react-svg-star-rating'
 export default function Profile() {
     const imgurl = 'https://ih0.redbubble.net/image.909979035.9762/flat,750x,075,f-pad,750x1000,f8f8f8.jpg';
     const currentRating = '9.8/10';
-    const recruiterName = 'Mike Wizowski';
-    const recruiterAgency = 'Meme Search LTD'
+    const recruiterName = 'Mike Wazowski';
+    const recruiterAgency = 'Meme Search LTD';
+    const locations = ['London', 'Guilford', 'Milton Keynes', 'Glasgow', 'Lagos']
     return (
         <>
             <h1>{recruiterName}</h1>
@@ -21,12 +22,22 @@ export default function Profile() {
                 </Tab>
                 <Tab eventKey="Jobs" title="Jobs">
                     {recruiterName} covers all software engineering roles in these locations:
+                    <ul>
+                        {locations.map(location => {
+                            return (
+                                <li>{location}</li>
+                            )
+                        })}
+                    </ul>
                 </Tab>
                 <Tab eventKey="Contact" title="Contact" >
-                    Phone:
-                    Email:
-                    Linkedin:
-                    Twitter:
+                    Phone: 0118 999 881 999 119 725 3 
+                    <br/>
+                    Email: Mike@MemeSearch.com
+                    <br/>
+                    Linkedin: <a href="https://www.linkedin.com/in/cameron-blackwood-2b758883">View Profile</a>
+                    <br/>
+                    Twitter: @Recruiter_Mike
                 </Tab>
                 <Tab eventKey="Rate" title={`Rate ${recruiterName}`} >
                 <StarRating count="10"/>

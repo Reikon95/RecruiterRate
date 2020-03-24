@@ -7,3 +7,10 @@ test('renders header', () => {
   const linkElement = getByText(/hiring/i);
   expect(linkElement).toBeInTheDocument();
 });
+
+test('button is present', () => {
+  const {getAllByRole} = render(<LandingPage/>);
+  const button = getAllByRole('button');
+  expect(button).toBeTruthy();
+  expect(button).toHaveLength(1);
+})

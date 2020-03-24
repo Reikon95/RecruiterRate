@@ -2,23 +2,13 @@ import React from 'react';
 import './LandingPage.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
 import { Link } from 'react-router-dom';
+import NavBarComp from '../navbar/Navbar.js';
 export default function LandingPage() {
 
     return (
         <>
-            <Navbar bg="light" expand="lg" fixed="top" >
-                <Navbar.Brand href="#">RecruiterRate</Navbar.Brand>
-                <Nav className="mr-auto">
-                    <Nav.Link href="/Recruiters">Recruiters</Nav.Link>
-                    <Nav.Link href="/Employers">Employers</Nav.Link>
-                    <Nav.Link href="/Jobseekers">Jobseekers</Nav.Link>
-                    <Nav.Link href="/AboutUs">About Us</Nav.Link>
-                    <Nav.Link href="/FAQs">FAQs</Nav.Link>
-                </Nav>
-            </Navbar>
+            <NavBarComp/>
                     <div className="landingPageBody">
 
             <h1>Say goodbye to smoke and mirrors.</h1>
@@ -28,7 +18,7 @@ export default function LandingPage() {
             <h3>Ready to get started?</h3>
             <Link to="/signup"><Button variant="danger">Sign Up</Button></Link>
             <br />
-            <Link to="/login">Already have an account? Log in</Link>
+            <Link to="/login" className="linkElement">Already have an account? Log in</Link>
         </div>
         </>
     )

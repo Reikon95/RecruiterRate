@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 .landingPageBody {
-    background-color: #e6e6ff;
-    color: black;
+    background-color: midnightblue;
+    color: white;
     font-family: 'Lato', sans-serif;
     padding-top: 5%;
     height: 100vh;
+}
+.linkElement {
+    color: white;
 }

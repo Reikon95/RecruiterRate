@@ -7,6 +7,8 @@ export default function SignUp() {
     let [userType, setUserType] = useState(false);
     return (
         <>
+            <h1>Sign Up</h1>
+
             Please describe yourself:
             <label>Recruiter:</label>
             <input type="radio" name="userType" onChange={() => setUserType("Recruiter")} />
@@ -15,23 +17,23 @@ export default function SignUp() {
             <label>Employer:</label>
             <input type="radio" name="userType" onChange={() => setUserType("Employer")} />
             <div className="signupGap">
-            {userType === "Recruiter" ?
-                <>
-                    <SignUpRecruiter/>
-                </>
-                : userType === "Jobseeker" ?
+                {userType === "Recruiter" ?
                     <>
-                        <SignUpCandidate/>
+                        <SignUpRecruiter />
                     </>
-                    : userType === "Employer" ?
+                    : userType === "Jobseeker" ?
                         <>
-                            <SignUpEmployer/>
+                            <SignUpCandidate />
                         </>
-                        :
-                        <>
-                            Select a role above to contunue
+                        : userType === "Employer" ?
+                            <>
+                                <SignUpEmployer />
+                            </>
+                            :
+                            <>
+                                Select a role above to contunue
                         </>
-            }
+                }
             </div>
         </>
     )

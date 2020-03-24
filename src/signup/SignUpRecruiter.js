@@ -3,7 +3,6 @@ export default function SignUpRecruiter() {
     let [agencyEmployee, setAgencyEmployee] = useState(false);
     return (
         <>
-            <h1>Sign Up</h1>
             <form>
                 <label>Email:</label>
                 <input type="email" />

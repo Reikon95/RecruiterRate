@@ -7,7 +7,7 @@ import StarRating from "react-svg-star-rating";
 export default function Profile() {
   const imgurl =
     "https://ih0.redbubble.net/image.909979035.9762/flat,750x,075,f-pad,750x1000,f8f8f8.jpg";
-  const currentRating = "9.8/10";
+  const currentRating = "4.5";
   const recruiterName = "Mike Wazowski";
   const recruiterAgency = "Meme Search LTD";
   const locations = ["London", "Guilford", "Milton Keynes", "Glasgow", "Lagos"];

@@ -3,7 +3,6 @@ import "./Profile.css";
 import Tabs from "react-bootstrap/Tabs";
 import Tab from "react-bootstrap/Tab";
 import StarRating from "react-svg-star-rating";
-import { Checkbox } from "react-bootstrap";
 
 export default function Profile() {
   const imgurl =
@@ -48,10 +47,10 @@ export default function Profile() {
           Twitter: @Recruiter_Mike
         </Tab>
         <Tab eventKey="Rate" title={`Rate ${recruiterName.split(" ")[0]}`}>
-          <StarRating count="10" />
           Are you happy for your testimonal to be used on Mike's profile?
           <input type="checkbox" /> Testimonal:
           <textarea></textarea>
+          <StarRating count="5" />
           <input type="submit" />
         </Tab>
       </Tabs>
